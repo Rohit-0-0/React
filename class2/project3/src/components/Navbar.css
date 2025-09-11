@@ -1,0 +1,57 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* left and right separated */
+  align-items: center;
+  padding: 12px 40px;
+  background: linear-gradient(90deg, #ffffff, #ffffff); /* nice gradient */
+  color: rgb(0, 0, 0);
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Left section (logo + links) */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: black;
+}
+
+.navbar-left .logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Links */
+.navbar-left a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-left a:hover {
+  color: #ffe600;
+  transform: scale(1.05);
+}
+
+/* Right section */
+.navbar-right {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-right div {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-right div:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+}
